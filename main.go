@@ -15,10 +15,10 @@ type info struct {
 func main() {
 	c := colly.NewCollector()
 
-	planeInfo := new(info)
-	planeInfo.Name = ""
-	planeInfo.Desc = ""
-	planeInfo.Link = ""
+	// planeInfo := new(info)
+	// planeInfo.Name = ""
+	// planeInfo.Desc = ""
+	// planeInfo.Link = ""
 
 	c.OnHTML("section[class='row row-small-gutter']", func(e *colly.HTMLElement) {
 		link := e.Attr("class")
